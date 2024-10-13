@@ -1,0 +1,7 @@
+{
+  "name": "Placafacil01",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
