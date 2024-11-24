@@ -1,0 +1,48 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="warning">
+    <ion-title class="ion-text-center">Placa Fácil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding login-content">
+  <div class="logo-container">
+    <img src="assets/images/logo.png" alt="Logo Placa Fácil" class="app-logo" />
+  </div>
+  
+  <form (ngSubmit)="login()" class="login-form">
+    <ion-item color="shade">
+      <ion-label position="floating" class="form-label">Email</ion-label>
+      <ion-input 
+        type="email" 
+        [(ngModel)]="email" 
+        name="email"
+        required
+        autocomplete="email">
+      </ion-input>
+    </ion-item>
+
+    <ion-item color="shade">
+      <ion-label position="floating" class="form-label">Senha</ion-label>
+      <ion-input 
+        type="password" 
+        [(ngModel)]="password" 
+        name="password"
+        required
+        minlength="6"
+        autocomplete="current-password">
+      </ion-input>
+    </ion-item>
+
+    <div class="ion-margin-top">
+      <ion-button type="submit" expand="block" color="warning">
+        Login
+      </ion-button>
+    </div>
+
+    <div class="ion-text-center ion-margin-top">
+      <ion-text (click)="signup()" color="medium" class="signup-link">
+        Não tem uma conta? Inscreva-se aqui!
+      </ion-text>
+    </div>
+  </form>
+</ion-content>

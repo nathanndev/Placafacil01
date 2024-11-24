@@ -1,0 +1,36 @@
+.signup-content {
+  --background: var(--ion-color-light);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form ion-item {
+  --highlight-height: 0px;
+  --inner-border-width: 0px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+  font-weight: bold;
+  color: var(--ion-color-medium);
+}
+
+ion-button {
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,55 @@
+.login-content {
+  --background: var(--ion-color-light);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
+.login-form ion-item {
+  --highlight-height: 0px;
+  --inner-border-width: 0px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 50%;
+}
+
+.form-label {
+  font-weight: bold;
+  color: var(--ion-color-medium);
+}
+
+.signup-link {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ion-button {
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ion-no-border{
+
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family:'Georgia', 'Times New Roman', Times, serif;
+
+
+}

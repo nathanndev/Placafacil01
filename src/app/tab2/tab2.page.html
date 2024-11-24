@@ -1,0 +1,78 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Consulta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color= 'warning' [fullscreen]="true">
+  <div class="search-container">
+    <ion-searchbar 
+      [(ngModel)]="placa" 
+      placeholder="ABC-1234"
+      class="custom-searchbar"
+      showCancelButton="never"
+      [clearIcon]="'close-circle'"
+      animated="true">
+    </ion-searchbar>
+
+    <ion-button 
+      expand="block" 
+      fill="outline" 
+      class="consultar-btn"
+      (click)="consultarPlaca()">
+      Consultar
+    </ion-button>
+
+    <p class="instruction-text">
+      Entre com a placa que deseja consultar.
+    </p>
+  </div>
+
+  <!-- Resultados da consulta -->
+  <div class="history-container">
+    <!-- Mostra os dados do veículo quando disponíveis -->
+    <div *ngIf="dadosVeiculo" class="vehicle-data">
+      <h2 class="vehicle-title">Dados do Veículo</h2>
+      <ion-card-content>
+        <div class="dados-container">
+
+          <div class="dados-item">
+            <h2 class="dados-label">Marca:</h2>
+            <p>{{ dadosVeiculo.marca }}</p>
+          </div>
+
+          <div class="dados-item">
+            <h2 class="dados-label">Modelo:</h2>
+            <p>{{ dadosVeiculo.modelo }}</p>
+          </div>
+
+          <div class="dados-item">
+            <h2 class="dados-label">Ano:</h2>
+            <p>{{ dadosVeiculo.ano }}</p>
+          </div>
+
+          <div class="dados-item">
+            <h2 class="dados-label">Cor:</h2>
+            <p>{{ dadosVeiculo.cor }}</p>
+          </div>
+
+        </div>
+      </ion-card-content>
+    </div>
+  </div>
+
+  
+    <ion-header  collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">tab2</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+
+</ion-content>
+
+
+

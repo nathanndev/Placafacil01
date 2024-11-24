@@ -17,11 +17,30 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #000000;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+
+.dados-veiculo-card {
+  margin-top: 20px;
+  background-color: #faad04; /* cor de fundo clara */
+  border-radius: 10px; /* bordas arredondadas */
+}
+
+.dados-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espaço entre os itens */
+}
+
+.dados-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }

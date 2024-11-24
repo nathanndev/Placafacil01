@@ -1,0 +1,17 @@
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #faad04; // Altere para a cor que você preferir
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; // Garante que a splash screen fica sobre o conteúdo da página
+  }
+  
+  .splash-screen img {
+    width: 80%; // Ajuste o tamanho da imagem conforme necessário
+  }
+  
